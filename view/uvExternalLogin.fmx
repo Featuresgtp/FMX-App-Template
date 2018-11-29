@@ -1,0 +1,10 @@
+inherited vExternalLogin: TvExternalLogin
+  object lytBody: TLayout
+    Align = VertCenter
+    Position.Y = 101.000000000000000000
+    Size.Width = 285.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,50 @@
+object vFacebook: TvFacebook
+  Padding.Left = 4.000000000000000000
+  Padding.Top = 4.000000000000000000
+  Padding.Right = 4.000000000000000000
+  Padding.Bottom = 4.000000000000000000
+  Size.Width = 304.000000000000000000
+  Size.Height = 86.000000000000000000
+  Size.PlatformDefault = False
+  object btnFBLogin: TTMSFMXButton
+    Version = '1.0.1.1'
+    Size.Width = 296.000000000000000000
+    Size.Height = 78.000000000000000000
+    Size.PlatformDefault = False
+    Align = Client
+    TabOrder = 0
+    Text = 'Facebook'
+    OnClick = btnFBLoginClick
+  end
+  object tmscloudFB: TTMSFMXCloudFaceBook
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'fb257***'
+    App.CallBackPort = 80
+    App.Key = '25***'
+    App.Secret = 'b8***'
+    Scopes.Strings = (
+      'publish_actions'
+      'user_friends'
+      'manage_pages'
+      'user_posts'
+      'user_photos'
+      'user_about_me'
+      'user_hometown'
+      'user_location'
+      'user_likes'
+      'user_website'
+      'user_relationships'
+      'user_birthday'
+      'user_managed_groups'
+      'read_insights')
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = tmscloudFBReceivedAccessToken
+    AuthFormSettings.CloseButtonCaption = 'Close'
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 64
+    Top = 24
+  end
+end

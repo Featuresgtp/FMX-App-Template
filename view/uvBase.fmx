@@ -1,0 +1,6 @@
+object vBase: TvBase
+  Align = Client
+  Size.Width = 285.000000000000000000
+  Size.Height = 253.000000000000000000
+  Size.PlatformDefault = False
+end
